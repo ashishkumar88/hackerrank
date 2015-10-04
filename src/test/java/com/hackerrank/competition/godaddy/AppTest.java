@@ -1,4 +1,4 @@
-package com.hackerrank;
+package com.hackerrank.competition.godaddy;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
