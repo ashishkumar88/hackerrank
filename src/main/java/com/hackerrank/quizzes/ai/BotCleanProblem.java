@@ -1,4 +1,4 @@
-package com.hackerrank.quizzes;
+package com.hackerrank.quizzes.ai;
 
 import java.text.DecimalFormat;
 import java.util.Scanner;
