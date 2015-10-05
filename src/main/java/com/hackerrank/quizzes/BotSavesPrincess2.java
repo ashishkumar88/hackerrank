@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @version 2.0v
  * @author Ashish Kumar
  */
-public class BotSavesPrincess {
+public class BotSavesPrincess2 {
 
     /**
      * Represents components of the game.
@@ -67,9 +67,11 @@ public class BotSavesPrincess {
 	    if (xTraversal < 0) {
 		System.out.println("LEFT");
 		xTraversal++;
+		System.exit(0);
 	    } else {
 		System.out.println("RIGHT");
 		xTraversal--;
+		System.exit(0);
 	    }
 	}
 
@@ -80,9 +82,11 @@ public class BotSavesPrincess {
 	    if (yTraversal < 0) {
 		System.out.println("UP");
 		yTraversal++;
+		System.exit(0);
 	    } else {
 		System.out.println("DOWN");
 		yTraversal--;
+		System.exit(0);
 	    }
 	}
     }
@@ -98,50 +102,5 @@ public class BotSavesPrincess {
 	// close the scanner
 	in.close();
 	displayPathtoPrincess(m, grid);
-    }
-}
-
-/**
- * Contains location of an object in the two dimensional grid
- *
- * @since 10-04-2015
- * @version 1.0v
- * @author Ashish Kumar
- */
-class Location {
-    private int x;
-    private int y;
-
-    public Location() {
-	super();
-    }
-
-    public Location(int x, int y) {
-	super();
-	this.x = x;
-	this.y = y;
-    }
-
-    public int getX() {
-	return x;
-    }
-
-    public int getY() {
-	return y;
-    }
-
-    public Location setX(int x) {
-	this.x = x;
-	return this;
-    }
-
-    public Location setY(int y) {
-	this.y = y;
-	return this;
-    }
-
-    @Override
-    public String toString() {
-	return "Location [x=" + x + ", y=" + y + "]";
     }
 }
